@@ -8,6 +8,9 @@ class EmployeeManager:
         try:
             with open(self.filename ,  "r") as f:
                 content = f.readlines()
+                if len(content) == 0:
+                    print(f"{self.filename} has no data")
+                    return
                 header = content[0].strip().split(",")
                 for values in content[1:]:
                     value = values.strip().split(",")
@@ -26,6 +29,9 @@ class EmployeeManager:
                 print(emp)
 
     def add_employee(self, emp):
+        if len(self.employee) == 0:
+            print(f"{self.filename} has no data")
+            return
         header = list(self.employee[0].keys())
         values = emp.split(",")
         if len(values) != len(header):
@@ -35,6 +41,9 @@ class EmployeeManager:
     def save(self):
          try:
             with open(self.filename ,  "w") as f:
+                if len(self.employee) == 0:
+                    print(f"{self.filename} has no data")
+                    return
                 header = list(self.employee[0].keys())
                 f.write(",".join(header) + "\n")
                 for emp in self.employee:
