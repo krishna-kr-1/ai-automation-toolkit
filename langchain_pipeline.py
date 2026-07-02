@@ -1,8 +1,13 @@
+import os
+from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_google_genai import ChatGoogleGenerativeAI
 
-llm = ChatGoogleGenerativeAI( model = "gemini-2.5-flash" , google_api_key = "Gemini_api_key")
+load_dotenv()
+google_api_key = os.getenv("GOOGLE_API_KEY")
+
+llm = ChatGoogleGenerativeAI( model = "gemini-1.5-flash" , google_api_key = google_api_key)
 
 summary_template = PromptTemplate(
     input_variables = ["document"],
@@ -21,7 +26,7 @@ def process(file):
     tone = tone_chain.invoke({"document" : summary})
     print(tone)
     
-if __name__ == "__main__":
+if "__name__" == "__main__":
     sample_doc = """
     hey so basically i was trying to fix this bug right and 
     it took me like 3 hours but i finally got it working. 
