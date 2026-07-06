@@ -32,8 +32,13 @@ Python utilities for AI and automation workflows.
 - Two step pipeline: summarize → rewrite in professional tone
 - Uses python-dotenv for secure API key management
 
+### Memory Chat (LangChain)
+- ConversationBufferMemory with ConversationChain
+- Full conversation history injected into every prompt
+- Exit on 'quit', prints memory buffer at end
+
 ## Tech Stack
-Python, Requests, LangChain, Google Gemini API, python-dotenv
+Python, Requests, Google Gemini API, LangChain, python-dotenv
 
 ## Usage
 
