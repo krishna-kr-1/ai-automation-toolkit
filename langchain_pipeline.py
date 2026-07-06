@@ -26,7 +26,7 @@ def process(file):
     tone = tone_chain.invoke({"document" : summary})
     print(tone)
     
-if "__name__" == "__main__":
+if __name__ == "__main__":
     sample_doc = """
     hey so basically i was trying to fix this bug right and 
     it took me like 3 hours but i finally got it working. 
