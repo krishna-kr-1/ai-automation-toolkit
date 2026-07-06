@@ -37,6 +37,11 @@ Python utilities for AI and automation workflows.
 - Full conversation history injected into every prompt
 - Exit on 'quit', prints memory buffer at end
 
+### LangChain Document Rewriter
+- Two-chain LCEL pipeline (summary → tone rewrite)
+- PromptTemplate, StrOutputParser, ChatGoogleGenerativeAI
+- Verified working with Gemini 2.5 Flash
+
 ## Tech Stack
 Python, Requests, Google Gemini API, LangChain, python-dotenv
 
