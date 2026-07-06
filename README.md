@@ -42,6 +42,10 @@ Python utilities for AI and automation workflows.
 - PromptTemplate, StrOutputParser, ChatGoogleGenerativeAI
 - Verified working with Gemini 2.5 Flash
 
+### Manual Memory Chat
+- Raw requests implementation with manual context tracking
+- Shows what LangChain memory abstracts under the hood
+
 ## Tech Stack
 Python, Requests, Google Gemini API, LangChain, python-dotenv
 
