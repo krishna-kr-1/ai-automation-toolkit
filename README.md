@@ -46,6 +46,12 @@ Python utilities for AI and automation workflows.
 - Raw requests implementation with manual context tracking
 - Shows what LangChain memory abstracts under the hood
 
+### Window Memory Chat (LangChain)
+- ConversationBufferWindowMemory with k=3
+- Remembers only last 3 exchanges — production-safe token management
+- Drops oldest exchanges automatically as conversation grows
+- Same interface as Memory Chat but token-efficient
+
 ## Tech Stack
 Python, Requests, Google Gemini API, LangChain, python-dotenv
 
@@ -100,7 +106,7 @@ load_dotenv()
 ```
 
 ## Requirements
-pip install requests langchain langchain-core langchain-google-genai python-dotenv
+pip install requests langchain langchain-classic langchain-core langchain-google-genai langchain-community python-dotenv
 
 ## Author
 Krishna Kumar — RPA Developer transitioning to AI Automation Engineer
