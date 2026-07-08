@@ -52,6 +52,11 @@ Python utilities for AI and automation workflows.
 - Drops oldest exchanges automatically as conversation grows
 - Same interface as Memory Chat but token-efficient
 
+### Basic Agent (LangChain)
+- initialize_agent
+- Create agent with Gemini to use Tools
+- Using a calculator tool to generate output
+
 ## Tech Stack
 Python, Requests, Google Gemini API, LangChain, python-dotenv
 
