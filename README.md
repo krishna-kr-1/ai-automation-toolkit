@@ -57,6 +57,12 @@ Python utilities for AI and automation workflows.
 - Create agent with Gemini to use Tools
 - Using a calculator tool to generate output
 
+### Multi Agent (LangChain)
+- initialize_agent
+- Create agent with Gemini to use Tools
+- Using a calculator tool, Reverse a word, Count words in a sentence to generate output
+
+
 ## Tech Stack
 Python, Requests, Google Gemini API, LangChain, python-dotenv
 
