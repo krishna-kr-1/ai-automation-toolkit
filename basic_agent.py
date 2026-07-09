@@ -29,7 +29,7 @@ def calculator(input):
 
 tools = [
      Tool(
-        name = "calulator",
+        name = "calculator",
         description = "This is a tool which is used to calculate numerical value by passing 1st parameter is number, 2nd parameter is number, 3rd parameter is a symbol in string format like + , -, *, /",
         func = calculator
     )    
