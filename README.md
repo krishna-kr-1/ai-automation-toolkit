@@ -5,7 +5,7 @@ Python utilities for AI and automation workflows.
 ## Setup
 
 1. Clone the repo
-2. Install dependencies: pip install requests langchain langchain-core langchain-google-genai python-dotenv
+2. Install dependencies: pip install requests langchain langchain-core langchain-google-genai python-dotenv langchain-classic
 3. Create a `.env` file in the root folder: GOOGLE_API_KEY=your_gemini_api_key_here
 4. Never commit your `.env` file — it's already in `.gitignore`
 
@@ -55,7 +55,9 @@ Python utilities for AI and automation workflows.
 ### Basic Agent (LangChain)
 - initialize_agent
 - Create agent with Gemini to use Tools
-- Using a calculator tool to generate output
+- ReAct pattern (Think → Act → Observe loop)
+- Single calculator tool with comma-separated input parsing
+- Demonstrates LLM-driven tool selection via ZERO_SHOT_REACT_DESCRIPTION
 
 ### Multi Agent (LangChain)
 - initialize_agent
@@ -121,3 +123,4 @@ pip install requests langchain langchain-classic langchain-core langchain-google
 
 ## Author
 Krishna Kumar — RPA Developer transitioning to AI Automation Engineer
+Stack: Python, LangChain, Google Gemini, Automation Anywhere A360, VBA Macro
