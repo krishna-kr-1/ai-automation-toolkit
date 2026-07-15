@@ -60,13 +60,21 @@ Python utilities for AI and automation workflows.
 - Demonstrates LLM-driven tool selection via ZERO_SHOT_REACT_DESCRIPTION
 
 ### Multi Agent (LangChain)
-- initialize_agent
-- Create agent with Gemini to use Tools
-- Using a calculator tool, Reverse a word, Count words in a sentence to generate output
+- initialize_agent with 3 tools — calculator, word counter, text reverser
+- LLM-driven dynamic tool selection via ZERO_SHOT_REACT_DESCRIPTION
+- Demonstrates agent picking correct tool based on tool descriptions
 
-### Memory Agent
-- All Features of Multi Agent
-- Having memory of previous conversation
+### Memory Agent (LangChain)
+- Multi-tool agent with ConversationBufferWindowMemory(k=5)
+- Remembers last 5 conversation exchanges
+- chat_history injected into agent context automatically
+
+### Basic RAG
+- RecursiveCharacterTextSplitter for document chunking
+- GoogleGenerativeAIEmbeddings (gemini-embedding-001) for vector conversion
+- FAISS vector store for similarity search
+- RetrievalQA chain connecting retriever to LLM
+- Query loop for interactive Q&A
 
 ## Tech Stack
 Python, Requests, Google Gemini API, LangChain, python-dotenv
