@@ -76,6 +76,15 @@ Python utilities for AI and automation workflows.
 - RetrievalQA chain connecting retriever to LLM
 - Query loop for interactive Q&A
 
+### PDF RAG (LangChain)
+- PyPDFLoader for extracting text from PDF documents
+- RecursiveCharacterTextSplitter for chunking PDF content
+- GoogleGenerativeAIEmbeddings (gemini-embedding-001) for vector conversion
+- FAISS vector store with index persistence — built once, reused forever
+- Auto-generates index path from PDF filename using os.path
+- RetrievalQA chain for accurate, document-grounded answers
+- Production-ready — avoids redundant embedding API calls on repeat runs
+
 ## Tech Stack
 Python, Requests, Google Gemini API, LangChain, python-dotenv
 
