@@ -85,6 +85,13 @@ Python utilities for AI and automation workflows.
 - RetrievalQA chain for accurate, document-grounded answers
 - Production-ready — avoids redundant embedding API calls on repeat runs
 
+### Conversational RAG (LangChain)
+- ConversationalRetrievalChain combining RAG + memory
+- ConversationBufferWindowMemory(k=5) for conversation history
+- Follow-up questions handled via chat_history context
+- FAISS vector store with index persistence
+- Known limitation: gemini-embedding-001 500 error on follow-up embedding calls — fix planned with LangGraph migration
+
 ## Tech Stack
 Python, Requests, Google Gemini API, LangChain, python-dotenv
 
